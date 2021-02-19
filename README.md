@@ -8,16 +8,24 @@ application to directly interact with a JSON-formatted REST API.
 Details:
 
 · Console output only – no UI .
-·  application  accept a postcode as an argument to its main() method.
+
+· application  accept a postcode as an argument to its main() method.
+
 · It query the API to:
-    Validate the postcode parameter – invalid postcodes should produce an error message
-    Print the country and region for that postcode.
-    Print a list of the nearest postcodes, and their countries and regions.
+   
+   Validate the postcode parameter – invalid postcodes should produce an error message
+   
+   Print the country and region for that postcode.
+   
+   Print a list of the nearest postcodes, and their countries and regions.
     
  · API methods of interest:
-    GET /postcodes/{POSTCODE}
-    GET /postcodes/{POSTCODE}/validate
-    GET /postcodes/{POSTCODE}/nearest
+   
+   GET /postcodes/{POSTCODE}
+   
+   GET /postcodes/{POSTCODE}/validate
+   
+   GET /postcodes/{POSTCODE}/nearest
 
 · Application carefully consider error handling (eg API failure / timeout, invalid input etc)
 
